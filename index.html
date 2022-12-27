@@ -65,36 +65,29 @@
 	text-shadow:0 0 20px;
 }
     ul {
-       margin:0px;
-       padding:0px;
+	   top:25px;
        list-style: none;
-        
+        position:absolute;
+	z-index:10000;
     }
+
 ul li {
-     float: Left;
-    width:150px;
-        height:50px;
-    background-color:d3d3d3;
-    line-height: 50px;
-    text-align:center;
+position:relative;
     font-size:20px;
     font-family: ariel;
-    margin-right: 7px;
+    text-align:center;
     }
-ul li a {
-    text-decoration: none;
-    color: red;
-    display: block;
-}
-ul li a:hover {
-    float:none;
-    background-color:aqua; 
-    }
-ul li ul li {
+    
+    ul li ul li {
     display: none;
+position:relative;
 }
 ul li:hover ul li {
+z-index:999;
+width:99%;
+height:99%;
     display: block;
+Position:relative;
 }
 .dronecapsule{
 position:absolute;
